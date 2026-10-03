@@ -1,1 +1,144 @@
-index
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>INNOVA - Tienda Online</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 25px 15px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: #ccc;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .producto {
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+      text-align: center;
+    }
+
+    .producto img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      background: #ddd;
+    }
+
+    .producto h2 {
+      margin: 12px 0 8px;
+      font-size: 20px;
+    }
+
+    .producto p {
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    .precio {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 10px;
+    }
+
+    .boton {
+      display: inline-block;
+      background: #111;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin-top: 8px;
+    }
+
+    .boton:hover {
+      background: #333;
+    }
+
+    footer {
+      text-align: center;
+      background: #111;
+      color: white;
+      padding: 25px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>INNOVA</h1>
+    <p>Tu tienda online</p>
+  </header>
+
+  <main class="productos">
+
+    <div class="producto">
+      <img src="https://via.placeholder.com/400x300" alt="Producto 1">
+      <h2>Producto 1</h2>
+      <p>Descripción del producto</p>
+      <div class="precio">$10.000</div>
+      <a class="boton" href="#">Comprar</a>
+    </div>
+
+    <div class="producto">
+      <img src="https://via.placeholder.com/400x300" alt="Producto 2">
+      <h2>Producto 2</h2>
+      <p>Descripción del producto</p>
+      <div class="precio">$15.000</div>
+      <a class="boton" href="#">Comprar</a>
+    </div>
+
+    <div class="producto">
+      <img src="https://via.placeholder.com/400x300" alt="Producto 3">
+      <h2>Producto 3</h2>
+      <p>Descripción del producto</p>
+      <div class="precio">$20.000</div>
+      <a class="boton" href="#">Comprar</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 INNOVA - Tienda Online</p>
+  </footer>
+
+</body>
+</html>
